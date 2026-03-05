@@ -1,0 +1,2056 @@
+  0           0 RESUME                   0
+
+  2           2 LOAD_CONST               0 ('    Syndicate BotNet Automation')
+              4 STORE_NAME               0 (_P)
+
+  3           6 LOAD_CONST               1 ('🔥 ACCESS GRANTED 🔥')
+              8 STORE_NAME               1 (_O)
+
+  4          10 LOAD_CONST               2 ('🚀 SYSTEM CHECK TOKEN 🚀')
+             12 STORE_NAME               2 (_N)
+
+  5          14 LOAD_CONST               3 ('\x1b[0m')
+             16 STORE_NAME               3 (_M)
+
+  6          18 LOAD_CONST               4 ('\x1b[95m')
+             20 STORE_NAME               4 (_L)
+
+  7          22 LOAD_CONST               5 ('\x1b[96m')
+             24 STORE_NAME               5 (_K)
+
+  8          26 LOAD_CONST               6 ('\x1b[93m')
+             28 STORE_NAME               6 (_J)
+
+  9          30 LOAD_CONST               7 ('\x1b[92m')
+             32 STORE_NAME               7 (_I)
+
+ 10          34 LOAD_CONST               8 ('\x1b[91m')
+             36 STORE_NAME               8 (_H)
+
+ 11          38 LOAD_CONST               9 ('signature')
+             40 STORE_NAME               9 (_G)
+
+ 12          42 LOAD_CONST              10 (False)
+             44 STORE_NAME              10 (_F)
+
+ 13          46 LOAD_CONST              11 ('Syndicate BotNet')
+             48 STORE_NAME              11 (_E)
+
+ 14          50 LOAD_CONST              12 ('clear')
+             52 STORE_NAME              12 (_D)
+
+ 15          54 LOAD_CONST              13 ('cls')
+             56 STORE_NAME              13 (_C)
+
+ 16          58 LOAD_CONST              14 ('\r')
+             60 STORE_NAME              14 (_B)
+
+ 17          62 LOAD_CONST              15 ('utf-8')
+             64 STORE_NAME              15 (_A)
+
+ 18          66 LOAD_CONST              16 (0)
+             68 LOAD_CONST              17 (None)
+             70 IMPORT_NAME             16 (asyncio)
+             72 STORE_NAME              16 (asyncio)
+             74 LOAD_CONST              16 (0)
+             76 LOAD_CONST              17 (None)
+             78 IMPORT_NAME             17 (json)
+             80 STORE_NAME              17 (json)
+             82 LOAD_CONST              16 (0)
+             84 LOAD_CONST              17 (None)
+             86 IMPORT_NAME             18 (random)
+             88 STORE_NAME              18 (random)
+             90 LOAD_CONST              16 (0)
+             92 LOAD_CONST              17 (None)
+             94 IMPORT_NAME             19 (hashlib)
+             96 STORE_NAME              19 (hashlib)
+             98 LOAD_CONST              16 (0)
+            100 LOAD_CONST              17 (None)
+            102 IMPORT_NAME             20 (time)
+            104 STORE_NAME              20 (time)
+            106 LOAD_CONST              16 (0)
+            108 LOAD_CONST              17 (None)
+            110 IMPORT_NAME             21 (sys)
+            112 STORE_NAME              21 (sys)
+            114 LOAD_CONST              16 (0)
+            116 LOAD_CONST              17 (None)
+            118 IMPORT_NAME             22 (os)
+            120 STORE_NAME              22 (os)
+            122 LOAD_CONST              16 (0)
+            124 LOAD_CONST              17 (None)
+            126 IMPORT_NAME             23 (requests)
+            128 STORE_NAME              23 (requests)
+            130 LOAD_CONST              16 (0)
+            132 LOAD_CONST              17 (None)
+            134 IMPORT_NAME             24 (base64)
+            136 STORE_NAME              24 (base64)
+            138 LOAD_CONST              16 (0)
+            140 LOAD_CONST              17 (None)
+            142 IMPORT_NAME             25 (subprocess)
+            144 STORE_NAME              25 (subprocess)
+            146 LOAD_CONST              16 (0)
+            148 LOAD_CONST              17 (None)
+            150 IMPORT_NAME             26 (urllib.parse)
+            152 STORE_NAME              27 (urllib)
+
+ 19         154 LOAD_CONST              16 (0)
+            156 LOAD_CONST              18 (('AES',))
+            158 IMPORT_NAME             28 (Crypto.Cipher)
+            160 IMPORT_FROM             29 (AES)
+            162 STORE_NAME              29 (AES)
+            164 POP_TOP
+
+ 20         166 LOAD_CONST              16 (0)
+            168 LOAD_CONST              19 (('unpad',))
+            170 IMPORT_NAME             30 (Crypto.Util.Padding)
+            172 IMPORT_FROM             31 (unpad)
+            174 STORE_NAME              31 (unpad)
+            176 POP_TOP
+
+ 21         178 LOAD_CONST              16 (0)
+            180 LOAD_CONST              20 (('unquote', 'parse_qsl', 'urlencode'))
+            182 IMPORT_NAME             26 (urllib.parse)
+            184 IMPORT_FROM             32 (unquote)
+            186 STORE_NAME              32 (unquote)
+            188 IMPORT_FROM             33 (parse_qsl)
+            190 STORE_NAME              33 (parse_qsl)
+            192 IMPORT_FROM             34 (urlencode)
+            194 STORE_NAME              34 (urlencode)
+            196 POP_TOP
+
+ 22         198 LOAD_CONST              16 (0)
+            200 LOAD_CONST              21 (('TelegramClient',))
+            202 IMPORT_NAME             35 (telethon.sync)
+            204 IMPORT_FROM             36 (TelegramClient)
+            206 STORE_NAME              36 (TelegramClient)
+            208 POP_TOP
+
+ 23         210 LOAD_CONST              16 (0)
+            212 LOAD_CONST              22 (('functions',))
+            214 IMPORT_NAME             37 (telethon)
+            216 IMPORT_FROM             38 (functions)
+            218 STORE_NAME              38 (functions)
+            220 POP_TOP
+
+ 24         222 LOAD_NAME                8 (_H)
+            224 STORE_NAME              39 (RED)
+
+ 25         226 LOAD_NAME                7 (_I)
+            228 STORE_NAME              40 (GREEN)
+
+ 26         230 LOAD_NAME                6 (_J)
+            232 STORE_NAME              41 (YELLOW)
+
+ 27         234 LOAD_NAME                5 (_K)
+            236 STORE_NAME              42 (CYAN)
+
+ 28         238 LOAD_NAME                4 (_L)
+            240 STORE_NAME              43 (MAGENTA)
+
+ 29         242 LOAD_CONST              23 ('\x1b[97m')
+            244 STORE_NAME              44 (WHITE)
+
+ 30         246 LOAD_NAME                3 (_M)
+            248 STORE_NAME              45 (RESET)
+
+ 31         250 LOAD_NAME                3 (_M)
+            252 STORE_NAME              46 (W)
+
+ 32         254 LOAD_NAME                8 (_H)
+            256 STORE_NAME              47 (R)
+
+ 33         258 LOAD_NAME                7 (_I)
+            260 STORE_NAME              48 (G)
+
+ 34         262 LOAD_NAME                6 (_J)
+            264 STORE_NAME              49 (Y)
+
+ 35         266 LOAD_CONST              24 ('\x1b[94m')
+            268 STORE_NAME              50 (B)
+
+ 36         270 LOAD_NAME                4 (_L)
+            272 STORE_NAME              51 (M)
+
+ 37         274 LOAD_NAME                5 (_K)
+            276 STORE_NAME              52 (C)
+
+ 38         278 LOAD_CONST              25 (28752231)
+            280 STORE_NAME              53 (API_ID)
+
+ 39         282 LOAD_CONST              26 ('ec1c1f2c30e2f1855c3edee7e348480b')
+            284 STORE_NAME              54 (API_HASH)
+
+ 40         286 LOAD_CONST              27 ('sess_132')
+            288 STORE_NAME              55 (SESSION_NAME)
+
+ 41         290 LOAD_CONST              28 (<code object clear at 0x7348c09d10, file "syndicate", line 41>)
+            292 MAKE_FUNCTION            0
+            294 STORE_NAME              56 (clear)
+
+ 44         296 LOAD_NAME                2 (_N)
+            298 LOAD_NAME               11 (_E)
+            300 BUILD_TUPLE              2
+            302 LOAD_CONST              29 (<code object banner at 0x7348c918b0, file "syndicate", line 44>)
+            304 MAKE_FUNCTION            1 (defaults)
+            306 STORE_NAME              57 (banner)
+
+ 45         308 LOAD_CONST              51 ((3,))
+            310 LOAD_CONST              30 (<code object loading at 0xb4000075cb2aa010, file "syndicate", line 45>)
+            312 MAKE_FUNCTION            1 (defaults)
+            314 STORE_NAME              58 (loading)
+
+ 49         316 LOAD_CONST              31 (<code object get_device_id at 0xb4000075cb2a96b0, file "syndicate", line 49>)
+            318 MAKE_FUNCTION            0
+            320 STORE_NAME              59 (get_device_id)
+
+ 52         322 LOAD_CONST              32 (<code object decrypt_from_multilingual at 0xb4000075ab2b3d30, file "syndicate", line 52>)
+            324 MAKE_FUNCTION            0
+            326 STORE_NAME              60 (decrypt_from_multilingual)
+
+ 59         328 LOAD_CONST              33 (<code object animate_loading at 0xb4000075cb2ac270, file "syndicate", line 59>)
+            330 MAKE_FUNCTION            0
+            332 STORE_NAME              61 (animate_loading)
+
+ 63         334 LOAD_CONST              34 (<code object generate_adsgram_data at 0x7348c88600, file "syndicate", line 63>)
+            336 MAKE_FUNCTION            0
+            338 STORE_NAME              62 (generate_adsgram_data)
+
+ 68         340 LOAD_CONST              35 (<code object main at 0xb40000748b295f50, file "syndicate", line 68>)
+            342 MAKE_FUNCTION            0
+            344 STORE_NAME              63 (main)
+
+ 94         346 LOAD_NAME               64 (__name__)
+            348 LOAD_CONST              36 ('__main__')
+            350 COMPARE_OP              40 (==)
+            354 EXTENDED_ARG             1
+            356 POP_JUMP_IF_FALSE      322 (to 1002)
+
+ 95         358 PUSH_NULL
+            360 LOAD_NAME               56 (clear)
+            362 CALL                     0
+            370 POP_TOP
+            372 PUSH_NULL
+            374 LOAD_NAME               57 (banner)
+            376 LOAD_NAME                2 (_N)
+            378 LOAD_NAME               11 (_E)
+            380 CALL                     2
+            388 POP_TOP
+            390 PUSH_NULL
+            392 LOAD_NAME               58 (loading)
+            394 LOAD_CONST              37 ('🔎 Initializing System...')
+            396 LOAD_CONST              38 (2)
+            398 CALL                     2
+            406 POP_TOP
+            408 PUSH_NULL
+            410 LOAD_NAME               59 (get_device_id)
+            412 CALL                     0
+            420 STORE_NAME              65 (device_id)
+            422 PUSH_NULL
+            424 LOAD_NAME               66 (print)
+            426 LOAD_NAME               41 (YELLOW)
+            428 FORMAT_VALUE             0
+            430 LOAD_CONST              39 ('📋 Please Copy And Send Your ID Below To Group So That Your Token Is Given')
+            432 LOAD_NAME               45 (RESET)
+            434 FORMAT_VALUE             0
+            436 LOAD_CONST              40 ('\n')
+            438 BUILD_STRING             4
+            440 CALL                     1
+            448 POP_TOP
+            450 PUSH_NULL
+            452 LOAD_NAME               66 (print)
+            454 LOAD_NAME               44 (WHITE)
+            456 FORMAT_VALUE             0
+            458 LOAD_CONST              41 ('🆔 Your ID => ')
+            460 LOAD_NAME               42 (CYAN)
+            462 FORMAT_VALUE             0
+            464 LOAD_NAME               65 (device_id)
+            466 FORMAT_VALUE             0
+            468 LOAD_NAME               45 (RESET)
+            470 FORMAT_VALUE             0
+            472 LOAD_CONST              40 ('\n')
+            474 BUILD_STRING             6
+            476 CALL                     1
+            484 POP_TOP
+            486 PUSH_NULL
+            488 LOAD_NAME               66 (print)
+            490 LOAD_NAME               43 (MAGENTA)
+            492 FORMAT_VALUE             0
+            494 LOAD_CONST              42 ('❌️ Access Pending Authorization ❌️')
+            496 LOAD_NAME               45 (RESET)
+            498 FORMAT_VALUE             0
+            500 BUILD_STRING             3
+            502 CALL                     1
+            510 POP_TOP
+            512 LOAD_NAME               21 (sys)
+            514 LOAD_ATTR              134 (stdout)
+            534 LOAD_ATTR              137 (NULL|self + write)
+            554 LOAD_NAME               42 (CYAN)
+            556 FORMAT_VALUE             0
+            558 LOAD_CONST              43 ('Enter the token given by the admin => ')
+            560 LOAD_NAME               45 (RESET)
+            562 FORMAT_VALUE             0
+            564 BUILD_STRING             3
+            566 CALL                     1
+            574 POP_TOP
+            576 LOAD_NAME               21 (sys)
+            578 LOAD_ATTR              134 (stdout)
+            598 LOAD_ATTR              139 (NULL|self + flush)
+            618 CALL                     0
+            626 POP_TOP
+            628 LOAD_CONST              44 ('botnets')
+            630 STORE_NAME              70 (key_secret)
+            632 PUSH_NULL
+            634 LOAD_NAME               71 (input)
+            636 CALL                     0
+            644 LOAD_ATTR              145 (NULL|self + strip)
+            664 CALL                     0
+            672 STORE_NAME              73 (masked)
+            674 PUSH_NULL
+            676 LOAD_NAME               60 (decrypt_from_multilingual)
+            678 LOAD_NAME               73 (masked)
+            680 LOAD_NAME               70 (key_secret)
+            682 CALL                     2
+            690 STORE_NAME              74 (decoded_token)
+            692 PUSH_NULL
+            694 LOAD_NAME               59 (get_device_id)
+            696 CALL                     0
+            704 STORE_NAME              75 (current_device_id)
+            706 PUSH_NULL
+            708 LOAD_NAME               56 (clear)
+            710 CALL                     0
+            718 POP_TOP
+
+ 96         720 LOAD_NAME               74 (decoded_token)
+            722 LOAD_NAME               10 (_F)
+            724 IS_OP                    1
+            726 POP_JUMP_IF_FALSE       94 (to 916)
+            728 LOAD_NAME               74 (decoded_token)
+            730 LOAD_NAME               75 (current_device_id)
+            732 COMPARE_OP              40 (==)
+            736 POP_JUMP_IF_FALSE       89 (to 916)
+
+ 97         738 PUSH_NULL
+            740 LOAD_NAME               57 (banner)
+            742 LOAD_NAME                1 (_O)
+            744 LOAD_NAME                0 (_P)
+            746 CALL                     2
+            754 POP_TOP
+            756 PUSH_NULL
+            758 LOAD_NAME               58 (loading)
+            760 LOAD_CONST              45 ('⏳ Syncing Data...')
+            762 LOAD_CONST              38 (2)
+            764 CALL                     2
+            772 POP_TOP
+            774 PUSH_NULL
+            776 LOAD_NAME               66 (print)
+            778 LOAD_NAME               40 (GREEN)
+            780 FORMAT_VALUE             0
+            782 LOAD_CONST              46 ('✅ Token Match! Access Granted.')
+            784 LOAD_NAME               45 (RESET)
+            786 FORMAT_VALUE             0
+            788 BUILD_STRING             3
+            790 CALL                     1
+            798 POP_TOP
+            800 PUSH_NULL
+            802 LOAD_NAME               20 (time)
+            804 LOAD_ATTR              152 (sleep)
+            824 LOAD_CONST              38 (2)
+            826 CALL                     1
+            834 POP_TOP
+            836 PUSH_NULL
+            838 LOAD_NAME               56 (clear)
+            840 CALL                     0
+            848 POP_TOP
+            850 PUSH_NULL
+            852 LOAD_NAME               57 (banner)
+            854 LOAD_NAME                1 (_O)
+            856 LOAD_NAME                0 (_P)
+            858 CALL                     2
+            866 POP_TOP
+
+ 98         868 PUSH_NULL
+            870 LOAD_NAME               16 (asyncio)
+            872 LOAD_ATTR              154 (run)
+            892 PUSH_NULL
+            894 LOAD_NAME               63 (main)
+            896 CALL                     0
+            904 CALL                     1
+            912 POP_TOP
+            914 RETURN_CONST            17 (None)
+
+100     >>  916 PUSH_NULL
+            918 LOAD_NAME               57 (banner)
+            920 LOAD_CONST              48 ('  ⚠️ ACCESS DENIED ⚠️')
+            922 LOAD_NAME               11 (_E)
+            924 CALL                     2
+            932 POP_TOP
+            934 PUSH_NULL
+            936 LOAD_NAME               66 (print)
+            938 LOAD_CONST              40 ('\n')
+            940 LOAD_NAME               39 (RED)
+            942 FORMAT_VALUE             0
+            944 LOAD_CONST              49 ('❌ Error: Invalid Token!')
+            946 LOAD_NAME               45 (RESET)
+            948 FORMAT_VALUE             0
+            950 LOAD_CONST              40 ('\n')
+            952 BUILD_STRING             5
+            954 CALL                     1
+            962 POP_TOP
+            964 PUSH_NULL
+            966 LOAD_NAME               21 (sys)
+            968 LOAD_ATTR              158 (exit)
+            988 LOAD_CONST              50 (1)
+            990 CALL                     1
+            998 POP_TOP
+           1000 RETURN_CONST            17 (None)
+
+ 94     >> 1002 RETURN_CONST            17 (None)
+        >> 1004 PUSH_EXC_INFO
+
+ 99        1006 LOAD_NAME               78 (KeyboardInterrupt)
+           1008 CHECK_EXC_MATCH
+           1010 POP_JUMP_IF_FALSE       17 (to 1046)
+           1012 POP_TOP
+           1014 PUSH_NULL
+           1016 LOAD_NAME               66 (print)
+           1018 LOAD_CONST              40 ('\n')
+           1020 LOAD_NAME               47 (R)
+           1022 FORMAT_VALUE             0
+           1024 LOAD_CONST              47 ('[!] Script stopped by user. Bye bree!')
+           1026 LOAD_NAME               46 (W)
+           1028 FORMAT_VALUE             0
+           1030 BUILD_STRING             4
+           1032 CALL                     1
+           1040 POP_TOP
+           1042 POP_EXCEPT
+           1044 RETURN_CONST            17 (None)
+        >> 1046 RERAISE                  0
+        >> 1048 COPY                     3
+           1050 POP_EXCEPT
+           1052 RERAISE                  1
+ExceptionTable:
+  868 to 912 -> 1004 [0]
+  1004 to 1040 -> 1048 [1] lasti
+  1046 to 1046 -> 1048 [1] lasti
+
+Disassembly of <code object clear at 0x7348c09d10, file "syndicate", line 41>:
+ 41           0 RESUME                   0
+
+ 42           2 LOAD_GLOBAL              0 (os)
+             12 LOAD_ATTR                2 (name)
+             32 LOAD_CONST               1 ('nt')
+             34 COMPARE_OP              40 (==)
+             38 POP_JUMP_IF_FALSE       26 (to 92)
+             40 LOAD_GLOBAL              1 (NULL + os)
+             50 LOAD_ATTR                4 (system)
+             70 LOAD_GLOBAL              6 (_C)
+             80 CALL                     1
+             88 POP_TOP
+             90 RETURN_CONST             0 (None)
+
+ 43     >>   92 LOAD_GLOBAL              1 (NULL + os)
+            102 LOAD_ATTR                4 (system)
+            122 LOAD_GLOBAL              8 (_D)
+            132 CALL                     1
+            140 POP_TOP
+            142 RETURN_CONST             0 (None)
+
+Disassembly of <code object banner at 0x7348c918b0, file "syndicate", line 44>:
+ 44           0 RESUME                   0
+              2 LOAD_FAST                0 (title)
+              4 LOAD_ATTR                1 (NULL|self + center)
+             24 LOAD_CONST               1 (30)
+             26 LOAD_CONST               2 (' ')
+             28 CALL                     2
+             36 STORE_FAST               2 (A)
+             38 LOAD_FAST                1 (subtitle)
+             40 LOAD_ATTR                1 (NULL|self + center)
+             60 LOAD_CONST               1 (30)
+             62 LOAD_CONST               2 (' ')
+             64 CALL                     2
+             72 STORE_FAST               3 (B)
+             74 LOAD_GLOBAL              3 (NULL + print)
+             84 LOAD_GLOBAL              4 (MAGENTA)
+             94 FORMAT_VALUE             0
+             96 CALL                     1
+            104 POP_TOP
+            106 LOAD_GLOBAL              3 (NULL + print)
+            116 LOAD_CONST               3 ('  ╔══════════════════════════════════╗')
+            118 CALL                     1
+            126 POP_TOP
+            128 LOAD_GLOBAL              3 (NULL + print)
+            138 LOAD_CONST               4 ('      ')
+            140 LOAD_FAST                2 (A)
+            142 FORMAT_VALUE             0
+            144 LOAD_CONST               5 ('  ')
+            146 BUILD_STRING             3
+            148 CALL                     1
+            156 POP_TOP
+            158 LOAD_GLOBAL              3 (NULL + print)
+            168 LOAD_CONST               6 ('   ')
+            170 LOAD_FAST                3 (B)
+            172 FORMAT_VALUE             0
+            174 LOAD_CONST               5 ('  ')
+            176 BUILD_STRING             3
+            178 CALL                     1
+            186 POP_TOP
+            188 LOAD_GLOBAL              3 (NULL + print)
+            198 LOAD_CONST               7 ('  ╚══════════════════════════════════╝')
+            200 CALL                     1
+            208 POP_TOP
+            210 LOAD_GLOBAL              3 (NULL + print)
+            220 LOAD_GLOBAL              6 (RESET)
+            230 FORMAT_VALUE             0
+            232 CALL                     1
+            240 POP_TOP
+            242 RETURN_CONST             0 (None)
+
+Disassembly of <code object loading at 0xb4000075cb2aa010, file "syndicate", line 45>:
+ 45           0 RESUME                   0
+
+ 46           2 BUILD_LIST               0
+              4 LOAD_CONST               1 (('⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏'))
+              6 LIST_EXTEND              1
+              8 STORE_FAST               2 (A)
+             10 LOAD_GLOBAL              1 (NULL + time)
+             20 LOAD_ATTR                0 (time)
+             40 CALL                     0
+             48 LOAD_FAST                1 (duration)
+             50 BINARY_OP                0 (+)
+             54 STORE_FAST               3 (C)
+             56 LOAD_CONST               2 (0)
+             58 STORE_FAST               4 (B)
+
+ 47          60 LOAD_GLOBAL              1 (NULL + time)
+             70 LOAD_ATTR                0 (time)
+             90 CALL                     0
+             98 LOAD_FAST                3 (C)
+            100 COMPARE_OP               2 (<)
+            104 POP_JUMP_IF_FALSE      144 (to 394)
+        >>  106 LOAD_GLOBAL              2 (sys)
+            116 LOAD_ATTR                4 (stdout)
+            136 LOAD_ATTR                7 (NULL|self + write)
+            156 LOAD_CONST               3 ('\r')
+            158 LOAD_GLOBAL              8 (CYAN)
+            168 FORMAT_VALUE             0
+            170 LOAD_FAST                0 (text)
+            172 FORMAT_VALUE             0
+            174 LOAD_CONST               4 (' ')
+            176 LOAD_FAST                2 (A)
+            178 LOAD_FAST                4 (B)
+            180 LOAD_GLOBAL             11 (NULL + len)
+            190 LOAD_FAST                2 (A)
+            192 CALL                     1
+            200 BINARY_OP                6 (%)
+            204 BINARY_SUBSCR
+            208 FORMAT_VALUE             0
+            210 LOAD_GLOBAL             12 (RESET)
+            220 FORMAT_VALUE             0
+            222 BUILD_STRING             6
+            224 CALL                     1
+            232 POP_TOP
+            234 LOAD_GLOBAL              2 (sys)
+            244 LOAD_ATTR                4 (stdout)
+            264 LOAD_ATTR               15 (NULL|self + flush)
+            284 CALL                     0
+            292 POP_TOP
+            294 LOAD_GLOBAL              1 (NULL + time)
+            304 LOAD_ATTR               16 (sleep)
+            324 LOAD_CONST               5 (0.1)
+            326 CALL                     1
+            334 POP_TOP
+            336 LOAD_FAST                4 (B)
+            338 LOAD_CONST               6 (1)
+            340 BINARY_OP               13 (+=)
+            344 STORE_FAST               4 (B)
+            346 LOAD_GLOBAL              1 (NULL + time)
+            356 LOAD_ATTR                0 (time)
+            376 CALL                     0
+            384 LOAD_FAST                3 (C)
+            386 COMPARE_OP               2 (<)
+            390 POP_JUMP_IF_FALSE        1 (to 394)
+            392 JUMP_BACKWARD          144 (to 106)
+
+ 48     >>  394 LOAD_GLOBAL              2 (sys)
+            404 LOAD_ATTR                4 (stdout)
+            424 LOAD_ATTR                7 (NULL|self + write)
+            444 LOAD_GLOBAL             18 (_B)
+            454 LOAD_CONST               7 ('                                                            ')
+            456 BINARY_OP                0 (+)
+            460 LOAD_GLOBAL             18 (_B)
+            470 BINARY_OP                0 (+)
+            474 CALL                     1
+            482 POP_TOP
+            484 LOAD_GLOBAL              2 (sys)
+            494 LOAD_ATTR                4 (stdout)
+            514 LOAD_ATTR               15 (NULL|self + flush)
+            534 CALL                     0
+            542 POP_TOP
+            544 RETURN_CONST             0 (None)
+
+Disassembly of <code object get_device_id at 0xb4000075cb2a96b0, file "syndicate", line 49>:
+ 49           0 RESUME                   0
+
+ 50           2 LOAD_GLOBAL              1 (NULL + subprocess)
+             12 LOAD_ATTR                2 (check_output)
+             32 LOAD_CONST               1 ('whoami')
+             34 LOAD_CONST               2 (True)
+             36 LOAD_GLOBAL              0 (subprocess)
+             46 LOAD_ATTR                4 (DEVNULL)
+             66 KW_NAMES                 3 (('shell', 'stderr'))
+             68 CALL                     3
+             76 LOAD_ATTR                7 (NULL|self + decode)
+             96 LOAD_GLOBAL              8 (_A)
+            106 CALL                     1
+            114 LOAD_ATTR               11 (NULL|self + strip)
+            134 CALL                     0
+            142 STORE_FAST               0 (A)
+            144 LOAD_GLOBAL              1 (NULL + subprocess)
+            154 LOAD_ATTR                2 (check_output)
+            174 LOAD_CONST               4 ('getprop ro.product.model')
+            176 LOAD_CONST               2 (True)
+            178 LOAD_GLOBAL              0 (subprocess)
+            188 LOAD_ATTR                4 (DEVNULL)
+            208 KW_NAMES                 3 (('shell', 'stderr'))
+            210 CALL                     3
+            218 LOAD_ATTR                7 (NULL|self + decode)
+            238 LOAD_GLOBAL              8 (_A)
+            248 CALL                     1
+            256 LOAD_ATTR               11 (NULL|self + strip)
+            276 CALL                     0
+            284 STORE_FAST               1 (B)
+            286 LOAD_FAST                0 (A)
+            288 FORMAT_VALUE             0
+            290 LOAD_CONST               5 ('-')
+            292 LOAD_FAST                1 (B)
+            294 FORMAT_VALUE             0
+            296 BUILD_STRING             3
+            298 STORE_FAST               2 (C)
+            300 LOAD_GLOBAL             13 (NULL + hashlib)
+            310 LOAD_ATTR               14 (md5)
+            330 LOAD_FAST                2 (C)
+            332 LOAD_ATTR               17 (NULL|self + encode)
+            352 LOAD_GLOBAL              8 (_A)
+            362 CALL                     1
+            370 CALL                     1
+            378 LOAD_ATTR               19 (NULL|self + hexdigest)
+            398 CALL                     0
+            406 RETURN_VALUE
+        >>  408 PUSH_EXC_INFO
+
+ 51         410 LOAD_GLOBAL             20 (Exception)
+            420 CHECK_EXC_MATCH
+            422 POP_JUMP_IF_FALSE        3 (to 430)
+            424 POP_TOP
+            426 POP_EXCEPT
+            428 RETURN_CONST             6 ('UNKNOWN_DEVICE')
+        >>  430 RERAISE                  0
+        >>  432 COPY                     3
+            434 POP_EXCEPT
+            436 RERAISE                  1
+ExceptionTable:
+  2 to 404 -> 408 [0]
+  408 to 424 -> 432 [1] lasti
+  430 to 430 -> 432 [1] lasti
+
+Disassembly of <code object decrypt_from_multilingual at 0xb4000075ab2b3d30, file "syndicate", line 52>:
+ 52           0 RESUME                   0
+
+ 53           2 LOAD_FAST                1 (secret_key)
+              4 STORE_FAST               2 (B)
+              6 LOAD_FAST                0 (masked_text)
+              8 STORE_FAST               3 (A)
+
+ 54          10 NOP
+
+ 55          12 BUILD_LIST               0
+             14 LOAD_CONST               1 ((1536, 3584, 19968, 7840, 1024, 12352))
+             16 LIST_EXTEND              1
+             18 STORE_FAST               4 (D)
+             20 LOAD_GLOBAL              1 (NULL + hashlib)
+             30 LOAD_ATTR                2 (md5)
+             50 LOAD_FAST                2 (B)
+             52 LOAD_ATTR                5 (NULL|self + encode)
+             72 LOAD_GLOBAL              6 (_A)
+             82 CALL                     1
+             90 CALL                     1
+             98 LOAD_ATTR                9 (NULL|self + hexdigest)
+            118 CALL                     0
+            126 LOAD_CONST               0 (None)
+            128 LOAD_CONST               2 (16)
+            130 BINARY_SLICE
+            132 STORE_FAST               5 (E)
+            134 LOAD_FAST                5 (E)
+            136 LOAD_ATTR                5 (NULL|self + encode)
+            156 LOAD_GLOBAL              6 (_A)
+            166 CALL                     1
+            174 STORE_FAST               6 (F)
+            176 LOAD_FAST                2 (B)
+            178 LOAD_ATTR                5 (NULL|self + encode)
+            198 LOAD_GLOBAL              6 (_A)
+            208 CALL                     1
+            216 LOAD_ATTR               11 (NULL|self + ljust)
+            236 LOAD_CONST               2 (16)
+            238 LOAD_CONST               3 (b'\x00')
+            240 CALL                     2
+            248 LOAD_CONST               0 (None)
+            250 LOAD_CONST               2 (16)
+            252 BINARY_SLICE
+            254 STORE_FAST               7 (G)
+            256 LOAD_GLOBAL             12 (urllib)
+            266 LOAD_ATTR               14 (parse)
+            286 LOAD_ATTR               17 (NULL|self + unquote)
+            306 LOAD_FAST                3 (A)
+            308 CALL                     1
+            316 STORE_FAST               3 (A)
+            318 LOAD_GLOBAL             19 (NULL + bytearray)
+            328 CALL                     0
+            336 STORE_FAST               8 (C)
+
+ 56         338 LOAD_GLOBAL             21 (NULL + enumerate)
+            348 LOAD_FAST                3 (A)
+            350 CALL                     1
+            358 GET_ITER
+        >>  360 FOR_ITER                49 (to 462)
+            364 UNPACK_SEQUENCE          2
+            368 STORE_FAST               9 (H)
+            370 STORE_FAST              10 (I)
+            372 LOAD_GLOBAL             23 (NULL + ord)
+            382 LOAD_FAST               10 (I)
+            384 CALL                     1
+            392 STORE_FAST              11 (J)
+            394 LOAD_FAST                4 (D)
+            396 LOAD_FAST                9 (H)
+            398 LOAD_CONST               4 (6)
+            400 BINARY_OP                6 (%)
+            404 BINARY_SUBSCR
+            408 STORE_FAST              12 (K)
+            410 LOAD_FAST               11 (J)
+            412 LOAD_FAST               12 (K)
+            414 BINARY_OP               10 (-)
+            418 STORE_FAST              13 (L)
+            420 LOAD_FAST                8 (C)
+            422 LOAD_ATTR               25 (NULL|self + append)
+            442 LOAD_FAST               13 (L)
+            444 LOAD_CONST               5 (255)
+            446 BINARY_OP                1 (&)
+            450 CALL                     1
+            458 POP_TOP
+            460 JUMP_BACKWARD           51 (to 360)
+        >>  462 END_FOR
+
+ 57         464 LOAD_FAST                8 (C)
+            466 LOAD_ATTR               27 (NULL|self + decode)
+            486 LOAD_GLOBAL              6 (_A)
+            496 CALL                     1
+            504 STORE_FAST              14 (M)
+            506 LOAD_GLOBAL             29 (NULL + base64)
+            516 LOAD_ATTR               30 (b64decode)
+            536 LOAD_FAST               14 (M)
+            538 CALL                     1
+            546 STORE_FAST              15 (N)
+            548 LOAD_GLOBAL             29 (NULL + base64)
+            558 LOAD_ATTR               30 (b64decode)
+            578 LOAD_FAST               15 (N)
+            580 CALL                     1
+            588 STORE_FAST              16 (O)
+            590 LOAD_GLOBAL             33 (NULL + AES)
+            600 LOAD_ATTR               34 (new)
+            620 LOAD_FAST                7 (G)
+            622 LOAD_GLOBAL             32 (AES)
+            632 LOAD_ATTR               36 (MODE_CBC)
+            652 LOAD_FAST                6 (F)
+            654 CALL                     3
+            662 STORE_FAST              17 (P)
+            664 LOAD_FAST               17 (P)
+            666 LOAD_ATTR               39 (NULL|self + decrypt)
+            686 LOAD_FAST               16 (O)
+            688 CALL                     1
+            696 STORE_FAST              18 (Q)
+            698 LOAD_GLOBAL             41 (NULL + unpad)
+            708 LOAD_FAST               18 (Q)
+            710 LOAD_GLOBAL             32 (AES)
+            720 LOAD_ATTR               42 (block_size)
+            740 CALL                     2
+            748 STORE_FAST              19 (R)
+            750 LOAD_FAST               19 (R)
+            752 LOAD_ATTR               27 (NULL|self + decode)
+            772 LOAD_GLOBAL              6 (_A)
+            782 CALL                     1
+            790 RETURN_VALUE
+        >>  792 PUSH_EXC_INFO
+
+ 58         794 LOAD_GLOBAL             44 (Exception)
+            804 CHECK_EXC_MATCH
+            806 POP_JUMP_IF_FALSE        9 (to 826)
+            808 POP_TOP
+            810 LOAD_GLOBAL             46 (_F)
+            820 SWAP                     2
+            822 POP_EXCEPT
+            824 RETURN_VALUE
+        >>  826 RERAISE                  0
+        >>  828 COPY                     3
+            830 POP_EXCEPT
+            832 RERAISE                  1
+ExceptionTable:
+  12 to 788 -> 792 [0]
+  792 to 820 -> 828 [1] lasti
+  826 to 826 -> 828 [1] lasti
+
+Disassembly of <code object animate_loading at 0xb4000075cb2ac270, file "syndicate", line 59>:
+ 59           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+
+ 60           6 BUILD_LIST               0
+              8 LOAD_CONST               1 (('⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏'))
+             10 LIST_EXTEND              1
+             12 STORE_FAST               2 (A)
+             14 LOAD_GLOBAL              1 (NULL + time)
+             24 LOAD_ATTR                0 (time)
+             44 CALL                     0
+             52 LOAD_FAST                1 (duration)
+             54 BINARY_OP                0 (+)
+             58 STORE_FAST               3 (D)
+             60 LOAD_CONST               2 (0)
+             62 STORE_FAST               4 (B)
+
+ 61          64 LOAD_GLOBAL              1 (NULL + time)
+             74 LOAD_ATTR                0 (time)
+             94 CALL                     0
+            102 LOAD_FAST                3 (D)
+            104 COMPARE_OP               2 (<)
+            108 POP_JUMP_IF_FALSE      152 (to 414)
+        >>  110 LOAD_GLOBAL              2 (sys)
+            120 LOAD_ATTR                4 (stdout)
+            140 LOAD_ATTR                7 (NULL|self + write)
+            160 LOAD_CONST               3 ('\r')
+            162 LOAD_GLOBAL              8 (C)
+            172 FORMAT_VALUE             0
+            174 LOAD_FAST                2 (A)
+            176 LOAD_FAST                4 (B)
+            178 LOAD_GLOBAL             11 (NULL + len)
+            188 LOAD_FAST                2 (A)
+            190 CALL                     1
+            198 BINARY_OP                6 (%)
+            202 BINARY_SUBSCR
+            206 FORMAT_VALUE             0
+            208 LOAD_CONST               4 (' ')
+            210 LOAD_FAST                0 (text)
+            212 FORMAT_VALUE             0
+            214 LOAD_GLOBAL             12 (W)
+            224 FORMAT_VALUE             0
+            226 BUILD_STRING             6
+            228 CALL                     1
+            236 POP_TOP
+            238 LOAD_GLOBAL              2 (sys)
+            248 LOAD_ATTR                4 (stdout)
+            268 LOAD_ATTR               15 (NULL|self + flush)
+            288 CALL                     0
+            296 POP_TOP
+            298 LOAD_FAST                4 (B)
+            300 LOAD_CONST               5 (1)
+            302 BINARY_OP               13 (+=)
+            306 STORE_FAST               4 (B)
+            308 LOAD_GLOBAL             17 (NULL + asyncio)
+            318 LOAD_ATTR               18 (sleep)
+            338 LOAD_CONST               6 (0.1)
+            340 CALL                     1
+            348 GET_AWAITABLE            0
+            350 LOAD_CONST               0 (None)
+        >>  352 SEND                     3 (to 362)
+            356 YIELD_VALUE              2
+            358 RESUME                   3
+            360 JUMP_BACKWARD_NO_INTERRUPT     5 (to 352)
+        >>  362 END_SEND
+            364 POP_TOP
+            366 LOAD_GLOBAL              1 (NULL + time)
+            376 LOAD_ATTR                0 (time)
+            396 CALL                     0
+            404 LOAD_FAST                3 (D)
+            406 COMPARE_OP               2 (<)
+            410 POP_JUMP_IF_FALSE        1 (to 414)
+            412 JUMP_BACKWARD          152 (to 110)
+
+ 62     >>  414 LOAD_GLOBAL              2 (sys)
+            424 LOAD_ATTR                4 (stdout)
+            444 LOAD_ATTR                7 (NULL|self + write)
+            464 LOAD_GLOBAL             20 (_B)
+            474 LOAD_CONST               7 ('                                                            ')
+            476 BINARY_OP                0 (+)
+            480 LOAD_GLOBAL             20 (_B)
+            490 BINARY_OP                0 (+)
+            494 CALL                     1
+            502 POP_TOP
+            504 LOAD_GLOBAL              2 (sys)
+            514 LOAD_ATTR                4 (stdout)
+            534 LOAD_ATTR               15 (NULL|self + flush)
+            554 CALL                     0
+            562 POP_TOP
+            564 RETURN_CONST             0 (None)
+
+ 61     >>  566 CLEANUP_THROW
+            568 JUMP_BACKWARD          104 (to 362)
+        >>  570 CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+            572 RERAISE                  1
+ExceptionTable:
+  4 to 354 -> 570 [0] lasti
+  356 to 356 -> 566 [2]
+  358 to 410 -> 570 [0] lasti
+  414 to 566 -> 570 [0] lasti
+
+Disassembly of <code object generate_adsgram_data at 0x7348c88600, file "syndicate", line 63>:
+ 63           0 RESUME                   0
+
+ 64           2 BUILD_LIST               0
+              4 STORE_FAST               1 (A)
+
+ 65           6 LOAD_GLOBAL              1 (NULL + sorted)
+             16 LOAD_FAST                0 (params)
+             18 LOAD_ATTR                3 (NULL|self + items)
+             38 CALL                     0
+             46 CALL                     1
+             54 GET_ITER
+        >>   56 FOR_ITER                38 (to 136)
+             60 UNPACK_SEQUENCE          2
+             64 STORE_FAST               2 (B)
+             66 STORE_FAST               3 (C)
+
+ 66          68 LOAD_FAST                2 (B)
+             70 LOAD_CONST               1 ('hash')
+             72 LOAD_GLOBAL              4 (_G)
+             82 BUILD_TUPLE              2
+             84 CONTAINS_OP              1
+             86 POP_JUMP_IF_TRUE         1 (to 90)
+             88 JUMP_BACKWARD           17 (to 56)
+        >>   90 LOAD_FAST                1 (A)
+             92 LOAD_ATTR                7 (NULL|self + append)
+            112 LOAD_FAST                2 (B)
+            114 FORMAT_VALUE             0
+            116 LOAD_CONST               2 ('=')
+            118 LOAD_FAST                3 (C)
+            120 FORMAT_VALUE             0
+            122 BUILD_STRING             3
+            124 CALL                     1
+            132 POP_TOP
+            134 JUMP_BACKWARD           40 (to 56)
+
+ 65     >>  136 END_FOR
+
+ 67         138 LOAD_CONST               3 ('\n')
+            140 LOAD_ATTR                9 (NULL|self + join)
+            160 LOAD_FAST                1 (A)
+            162 CALL                     1
+            170 STORE_FAST               4 (D)
+            172 LOAD_GLOBAL             11 (NULL + base64)
+            182 LOAD_ATTR               12 (b64encode)
+            202 LOAD_FAST                4 (D)
+            204 LOAD_ATTR               15 (NULL|self + encode)
+            224 LOAD_GLOBAL             16 (_A)
+            234 CALL                     1
+            242 CALL                     1
+            250 LOAD_ATTR               19 (NULL|self + decode)
+            270 LOAD_GLOBAL             16 (_A)
+            280 CALL                     1
+            288 STORE_FAST               5 (E)
+            290 LOAD_FAST                5 (E)
+            292 RETURN_VALUE
+
+Disassembly of <code object main at 0xb40000748b295f50, file "syndicate", line 68>:
+ 68           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+
+ 69           6 LOAD_CONST               1 ('token')
+              8 STORE_FAST               0 (u)
+             10 LOAD_CONST               2 ('userId')
+             12 STORE_FAST               1 (t)
+             14 LOAD_CONST               3 ('android')
+             16 STORE_FAST               2 (s)
+             18 LOAD_CONST               4 ('posix')
+             20 STORE_FAST               3 (r)
+             22 LOAD_CONST               5 ('id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7')
+             24 STORE_FAST               4 (q)
+             26 LOAD_CONST               6 ('https://moonraid.online/')
+             28 STORE_FAST               5 (p)
+             30 LOAD_CONST               7 ('empty')
+             32 STORE_FAST               6 (o)
+             34 LOAD_CONST               8 ('cors')
+             36 STORE_FAST               7 (n)
+             38 LOAD_CONST               9 ('org.telegram.messenger')
+             40 STORE_FAST               8 (m)
+             42 LOAD_CONST              10 ('"Not:A-Brand";v="99", "Android WebView";v="145", "Chromium";v="145"')
+             44 STORE_FAST               9 (l)
+             46 LOAD_CONST              11 ('"Android"')
+             48 STORE_FAST              10 (k)
+             50 LOAD_CONST              12 ('gzip, deflate, br, zstd')
+             52 STORE_FAST              11 (j)
+             54 LOAD_CONST              13 ('sec-ch-ua-mobile')
+             56 STORE_FAST              12 (i)
+             58 LOAD_CONST              14 ('sec-ch-ua')
+             60 STORE_FAST              13 (h)
+             62 LOAD_CONST              15 ('sec-ch-ua-platform')
+             64 STORE_FAST              14 (g)
+             66 LOAD_CONST              16 ('Accept-Encoding')
+             68 STORE_FAST              15 (f)
+             70 LOAD_CONST              17 ('banners')
+             72 STORE_FAST              16 (S)
+             74 LOAD_CONST              18 ('https://moonraid.online')
+             76 STORE_FAST              17 (Q)
+             78 LOAD_CONST              19 ('User-Agent')
+             80 STORE_FAST              18 (P)
+             82 LOAD_GLOBAL              1 (NULL + TelegramClient)
+             92 LOAD_GLOBAL              2 (SESSION_NAME)
+            102 LOAD_GLOBAL              4 (API_ID)
+            112 LOAD_GLOBAL              6 (API_HASH)
+            122 CALL                     3
+            130 STORE_FAST              19 (A)
+            132 LOAD_FAST               19 (A)
+            134 LOAD_ATTR                9 (NULL|self + start)
+            154 CALL                     0
+            162 GET_AWAITABLE            0
+            164 LOAD_CONST               0 (None)
+        >>  166 SEND                     3 (to 176)
+            170 YIELD_VALUE              2
+            172 RESUME                   3
+            174 JUMP_BACKWARD_NO_INTERRUPT     5 (to 166)
+        >>  176 END_SEND
+            178 POP_TOP
+            180 LOAD_FAST               18 (P)
+            182 LOAD_CONST              20 ('Mozilla/5.0 (Linux; Android 14; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.7632.79 Mobile Safari/537.36 Telegram-Android/12.1.1 (Google Pixel 8 Pro; Android 14; SDK 34; LOW)')
+            184 LOAD_FAST               15 (f)
+            186 LOAD_FAST               11 (j)
+            188 LOAD_CONST              21 ('Cache-Control')
+            190 LOAD_CONST              22 ('max-age=0')
+            192 LOAD_CONST              23 ('X-Color-Scheme')
+            194 LOAD_CONST              24 ('light')
+            196 LOAD_FAST               14 (g)
+            198 LOAD_FAST               10 (k)
+            200 LOAD_FAST               13 (h)
+            202 LOAD_FAST                9 (l)
+            204 LOAD_FAST               12 (i)
+            206 LOAD_CONST              25 ('?1')
+            208 LOAD_CONST              26 ('Origin')
+            210 LOAD_FAST               17 (Q)
+            212 LOAD_CONST              27 ('X-Requested-With')
+            214 LOAD_FAST                8 (m)
+            216 LOAD_CONST              28 ('Sec-Fetch-Site')
+            218 LOAD_CONST              29 ('cross-site')
+            220 LOAD_CONST              30 ('Sec-Fetch-Mode')
+            222 LOAD_FAST                7 (n)
+            224 LOAD_CONST              31 ('Sec-Fetch-Dest')
+            226 LOAD_FAST                6 (o)
+            228 LOAD_CONST              32 ('Referer')
+            230 LOAD_FAST                5 (p)
+            232 LOAD_CONST              33 ('Accept-Language')
+            234 LOAD_FAST                4 (q)
+            236 BUILD_MAP               14
+            238 STORE_FAST              20 (H)
+            240 LOAD_CONST              34 ('https://moonraid.online/api/adsgram/my-stats')
+            242 STORE_FAST              21 (v)
+            244 LOAD_FAST               18 (P)
+            246 LOAD_FAST               20 (H)
+            248 LOAD_FAST               18 (P)
+            250 BINARY_SUBSCR
+            254 LOAD_CONST              35 ('Accept')
+            256 LOAD_CONST              36 ('application/json, text/plain, */*')
+            258 LOAD_FAST               15 (f)
+            260 LOAD_FAST               11 (j)
+            262 LOAD_CONST              37 ('Content-Type')
+            264 LOAD_CONST              38 ('application/json')
+            266 LOAD_FAST               14 (g)
+            268 LOAD_FAST               10 (k)
+            270 LOAD_FAST               13 (h)
+            272 LOAD_FAST                9 (l)
+            274 LOAD_FAST               12 (i)
+            276 LOAD_CONST              25 ('?1')
+            278 LOAD_CONST              39 ('origin')
+            280 LOAD_FAST               17 (Q)
+            282 LOAD_CONST              40 ('x-requested-with')
+            284 LOAD_FAST                8 (m)
+            286 LOAD_CONST              41 ('sec-fetch-site')
+            288 LOAD_CONST              42 ('same-origin')
+            290 LOAD_CONST              43 ('sec-fetch-mode')
+            292 LOAD_FAST                7 (n)
+            294 LOAD_CONST              44 ('sec-fetch-dest')
+            296 LOAD_FAST                6 (o)
+            298 LOAD_CONST              45 ('referer')
+            300 LOAD_FAST                5 (p)
+            302 LOAD_CONST              46 ('accept-language')
+            304 LOAD_FAST                4 (q)
+            306 LOAD_CONST              47 ('priority')
+            308 LOAD_CONST              48 ('u=1, i')
+            310 BUILD_MAP               15
+            312 STORE_FAST              22 (D)
+
+ 70     >>  314 NOP
+
+ 71     >>  316 LOAD_GLOBAL             11 (NULL + os)
+            326 LOAD_ATTR               12 (system)
+            346 LOAD_GLOBAL             10 (os)
+            356 LOAD_ATTR               14 (name)
+            376 LOAD_FAST                3 (r)
+            378 COMPARE_OP              40 (==)
+            382 POP_JUMP_IF_FALSE        6 (to 396)
+            384 LOAD_GLOBAL             16 (_D)
+            394 JUMP_FORWARD             5 (to 406)
+        >>  396 LOAD_GLOBAL             18 (_C)
+        >>  406 CALL                     1
+            414 POP_TOP
+            416 LOAD_GLOBAL             21 (NULL + print)
+            426 LOAD_CONST              49 ('\n')
+            428 LOAD_GLOBAL             22 (M)
+            438 FORMAT_VALUE             0
+            440 LOAD_CONST              50 ('╔═════════════════════════════════════════════════════╗')
+            442 LOAD_GLOBAL             24 (W)
+            452 FORMAT_VALUE             0
+            454 BUILD_STRING             4
+            456 CALL                     1
+            464 POP_TOP
+            466 LOAD_GLOBAL             21 (NULL + print)
+            476 LOAD_GLOBAL             22 (M)
+            486 FORMAT_VALUE             0
+            488 LOAD_CONST              51 (' ')
+            490 LOAD_GLOBAL             26 (C)
+            500 FORMAT_VALUE             0
+            502 LOAD_CONST              52 (' 🚀 MOONRAID AUTO BOT ')
+            504 LOAD_GLOBAL             28 (G)
+            514 FORMAT_VALUE             0
+            516 LOAD_CONST              53 ('STARTING... ')
+            518 LOAD_GLOBAL             22 (M)
+            528 FORMAT_VALUE             0
+            530 LOAD_CONST              51 (' ')
+            532 LOAD_GLOBAL             26 (C)
+            542 FORMAT_VALUE             0
+            544 LOAD_CONST              54 (' SyndicateBot Net  ')
+            546 LOAD_GLOBAL             24 (W)
+            556 FORMAT_VALUE             0
+            558 BUILD_STRING            11
+            560 CALL                     1
+            568 POP_TOP
+            570 LOAD_GLOBAL             21 (NULL + print)
+            580 LOAD_GLOBAL             22 (M)
+            590 FORMAT_VALUE             0
+            592 LOAD_CONST              55 ('╚═════════════════════════════════════════════════════╝')
+            594 LOAD_GLOBAL             24 (W)
+            604 FORMAT_VALUE             0
+            606 LOAD_CONST              49 ('\n')
+            608 BUILD_STRING             4
+            610 CALL                     1
+            618 POP_TOP
+
+ 72         620 NOP
+
+ 73         622 LOAD_GLOBAL             21 (NULL + print)
+            632 LOAD_GLOBAL             30 (Y)
+            642 FORMAT_VALUE             0
+            644 LOAD_CONST              56 ('[*] Retrieving WebApp authentication data from Telegram...')
+            646 LOAD_GLOBAL             24 (W)
+            656 FORMAT_VALUE             0
+            658 BUILD_STRING             3
+            660 CALL                     1
+            668 POP_TOP
+            670 LOAD_CONST              57 ('@moonraid_game_bot')
+            672 STORE_FAST              23 (w)
+            674 LOAD_FAST               19 (A)
+            676 LOAD_ATTR               33 (NULL|self + get_input_entity)
+            696 LOAD_FAST               23 (w)
+            698 CALL                     1
+            706 GET_AWAITABLE            0
+            708 LOAD_CONST               0 (None)
+        >>  710 SEND                     3 (to 720)
+            714 YIELD_VALUE              3
+            716 RESUME                   3
+            718 JUMP_BACKWARD_NO_INTERRUPT     5 (to 710)
+        >>  720 END_SEND
+            722 STORE_FAST              24 (I)
+            724 LOAD_FAST               19 (A)
+            726 LOAD_ATTR               35 (NULL|self + send_message)
+            746 LOAD_FAST               24 (I)
+            748 LOAD_CONST              58 ('/start')
+            750 CALL                     2
+            758 GET_AWAITABLE            0
+            760 LOAD_CONST               0 (None)
+        >>  762 SEND                     3 (to 772)
+            766 YIELD_VALUE              3
+            768 RESUME                   3
+            770 JUMP_BACKWARD_NO_INTERRUPT     5 (to 762)
+        >>  772 END_SEND
+            774 POP_TOP
+            776 LOAD_GLOBAL             37 (NULL + asyncio)
+            786 LOAD_ATTR               38 (sleep)
+            806 LOAD_CONST              59 (2)
+            808 CALL                     1
+            816 GET_AWAITABLE            0
+            818 LOAD_CONST               0 (None)
+        >>  820 SEND                     3 (to 830)
+            824 YIELD_VALUE              3
+            826 RESUME                   3
+            828 JUMP_BACKWARD_NO_INTERRUPT     5 (to 820)
+        >>  830 END_SEND
+            832 POP_TOP
+            834 PUSH_NULL
+            836 LOAD_FAST               19 (A)
+            838 LOAD_GLOBAL             40 (functions)
+            848 LOAD_ATTR               42 (messages)
+            868 LOAD_ATTR               45 (NULL|self + RequestWebViewRequest)
+            888 LOAD_FAST               24 (I)
+            890 LOAD_FAST               24 (I)
+            892 LOAD_FAST                2 (s)
+            894 LOAD_GLOBAL             46 (_F)
+            904 LOAD_FAST               17 (Q)
+            906 KW_NAMES                60 (('peer', 'bot', 'platform', 'from_bot_menu', 'url'))
+            908 CALL                     5
+            916 CALL                     1
+            924 GET_AWAITABLE            0
+            926 LOAD_CONST               0 (None)
+        >>  928 SEND                     3 (to 938)
+            932 YIELD_VALUE              3
+            934 RESUME                   3
+            936 JUMP_BACKWARD_NO_INTERRUPT     5 (to 928)
+        >>  938 END_SEND
+            940 STORE_FAST              25 (x)
+            942 LOAD_FAST               25 (x)
+            944 LOAD_ATTR               48 (url)
+            964 STORE_FAST              26 (y)
+            966 LOAD_FAST               26 (y)
+            968 LOAD_ATTR               51 (NULL|self + split)
+            988 LOAD_CONST              61 ('tgWebAppData=')
+            990 CALL                     1
+            998 LOAD_CONST              62 (1)
+           1000 BINARY_SUBSCR
+           1004 LOAD_ATTR               51 (NULL|self + split)
+           1024 LOAD_CONST              63 ('&tgWebAppVersion')
+           1026 CALL                     1
+           1034 LOAD_CONST              64 (0)
+           1036 BINARY_SUBSCR
+           1040 STORE_FAST              27 (z)
+           1042 LOAD_GLOBAL             53 (NULL + unquote)
+           1052 LOAD_FAST               27 (z)
+           1054 CALL                     1
+           1062 STORE_FAST              28 (T)
+           1064 LOAD_GLOBAL             55 (NULL + dict)
+           1074 LOAD_GLOBAL             57 (NULL + parse_qsl)
+           1084 LOAD_FAST               28 (T)
+           1086 CALL                     1
+           1094 CALL                     1
+           1102 STORE_FAST              29 (J)
+           1104 LOAD_GLOBAL             59 (NULL + json)
+           1114 LOAD_ATTR               60 (loads)
+           1134 LOAD_FAST               29 (J)
+           1136 LOAD_ATTR               63 (NULL|self + get)
+           1156 LOAD_CONST              65 ('user')
+           1158 LOAD_CONST              66 ('{}')
+           1160 CALL                     2
+           1168 CALL                     1
+           1176 STORE_FAST              30 (U)
+           1178 LOAD_GLOBAL             65 (NULL + str)
+           1188 LOAD_FAST               30 (U)
+           1190 LOAD_ATTR               63 (NULL|self + get)
+           1210 LOAD_CONST              67 ('id')
+           1212 LOAD_CONST              68 ('')
+           1214 CALL                     2
+           1222 CALL                     1
+           1230 STORE_FAST              31 (E)
+           1232 LOAD_GLOBAL             21 (NULL + print)
+           1242 LOAD_GLOBAL             30 (Y)
+           1252 FORMAT_VALUE             0
+           1254 LOAD_CONST              69 ('[*] Logging in to Moonraid API...')
+           1256 LOAD_GLOBAL             24 (W)
+           1266 FORMAT_VALUE             0
+           1268 BUILD_STRING             3
+           1270 CALL                     1
+           1278 POP_TOP
+           1280 LOAD_CONST              70 ('https://moonraid.online/api/auth/telegram')
+           1282 STORE_FAST              32 (A0)
+           1284 LOAD_CONST              71 ('initData')
+           1286 LOAD_FAST               28 (T)
+           1288 LOAD_FAST                1 (t)
+           1290 LOAD_FAST               31 (E)
+           1292 POP_JUMP_IF_FALSE       11 (to 1316)
+           1294 LOAD_GLOBAL             67 (NULL + int)
+           1304 LOAD_FAST               31 (E)
+           1306 CALL                     1
+           1314 JUMP_FORWARD             1 (to 1318)
+        >> 1316 LOAD_CONST              64 (0)
+        >> 1318 BUILD_MAP                2
+           1320 STORE_FAST              33 (A1)
+           1322 LOAD_GLOBAL             69 (NULL + requests)
+           1332 LOAD_ATTR               70 (post)
+           1352 LOAD_FAST               32 (A0)
+           1354 LOAD_FAST               33 (A1)
+           1356 LOAD_FAST               22 (D)
+           1358 KW_NAMES                72 (('json', 'headers'))
+           1360 CALL                     3
+           1368 STORE_FAST              34 (V)
+           1370 LOAD_FAST               34 (V)
+           1372 LOAD_ATTR               59 (NULL|self + json)
+           1392 CALL                     0
+           1400 STORE_FAST              35 (X)
+
+ 74        1402 LOAD_FAST                0 (u)
+           1404 LOAD_FAST               35 (X)
+           1406 CONTAINS_OP              0
+           1408 POP_JUMP_IF_FALSE       46 (to 1502)
+           1410 LOAD_FAST               35 (X)
+           1412 LOAD_FAST                0 (u)
+           1414 BINARY_SUBSCR
+           1418 STORE_FAST              36 (Z)
+           1420 LOAD_CONST              73 ('Bearer ')
+           1422 LOAD_FAST               36 (Z)
+           1424 FORMAT_VALUE             0
+           1426 BUILD_STRING             2
+           1428 LOAD_FAST               22 (D)
+           1430 LOAD_CONST              74 ('authorization')
+           1432 STORE_SUBSCR
+           1436 LOAD_CONST              75 ('token=')
+           1438 LOAD_FAST               36 (Z)
+           1440 FORMAT_VALUE             0
+           1442 BUILD_STRING             2
+           1444 LOAD_FAST               22 (D)
+           1446 LOAD_CONST              76 ('Cookie')
+           1448 STORE_SUBSCR
+           1452 LOAD_GLOBAL             21 (NULL + print)
+           1462 LOAD_GLOBAL             28 (G)
+           1472 FORMAT_VALUE             0
+           1474 LOAD_CONST              77 ('[+] Token parsing successful!')
+           1476 LOAD_GLOBAL             24 (W)
+           1486 FORMAT_VALUE             0
+           1488 BUILD_STRING             3
+           1490 CALL                     1
+           1498 POP_TOP
+           1500 JUMP_FORWARD            91 (to 1684)
+
+ 75     >> 1502 LOAD_GLOBAL             21 (NULL + print)
+           1512 LOAD_GLOBAL             72 (R)
+           1522 FORMAT_VALUE             0
+           1524 LOAD_CONST              78 ('[!] Failed to get token. Server response: ')
+           1526 LOAD_FAST               34 (V)
+           1528 LOAD_ATTR               74 (text)
+           1548 FORMAT_VALUE             0
+           1550 LOAD_GLOBAL             24 (W)
+           1560 FORMAT_VALUE             0
+           1562 BUILD_STRING             4
+           1564 CALL                     1
+           1572 POP_TOP
+           1574 LOAD_GLOBAL             21 (NULL + print)
+           1584 LOAD_GLOBAL             30 (Y)
+           1594 FORMAT_VALUE             0
+           1596 LOAD_CONST              79 ('[*] Retrying in 5 seconds...')
+           1598 LOAD_GLOBAL             24 (W)
+           1608 FORMAT_VALUE             0
+           1610 BUILD_STRING             3
+           1612 CALL                     1
+           1620 POP_TOP
+           1622 LOAD_GLOBAL             37 (NULL + asyncio)
+           1632 LOAD_ATTR               38 (sleep)
+           1652 LOAD_CONST              80 (5)
+           1654 CALL                     1
+           1662 GET_AWAITABLE            0
+           1664 LOAD_CONST               0 (None)
+        >> 1666 SEND                     3 (to 1676)
+           1670 YIELD_VALUE              3
+           1672 RESUME                   3
+           1674 JUMP_BACKWARD_NO_INTERRUPT     5 (to 1666)
+        >> 1676 END_SEND
+           1678 POP_TOP
+           1680 EXTENDED_ARG             2
+           1682 JUMP_BACKWARD          685 (to 314)
+
+ 76     >> 1684 LOAD_CONST              68 ('')
+           1686 LOAD_ATTR               77 (NULL|self + join)
+           1706 LOAD_GLOBAL             79 (NULL + random)
+           1716 LOAD_ATTR               80 (choices)
+           1736 LOAD_CONST              81 ('0123456789')
+           1738 LOAD_CONST              82 (30)
+           1740 KW_NAMES                83 (('k',))
+           1742 CALL                     2
+           1750 CALL                     1
+           1758 STORE_FAST              37 (a)
+           1760 LOAD_GLOBAL             83 (NULL + hashlib)
+           1770 LOAD_ATTR               84 (sha256)
+           1790 LOAD_FAST               37 (a)
+           1792 LOAD_ATTR               87 (NULL|self + encode)
+           1812 CALL                     0
+           1820 CALL                     1
+           1828 LOAD_ATTR               89 (NULL|self + hexdigest)
+           1848 CALL                     0
+           1856 STORE_FAST              38 (A2)
+           1858 LOAD_CONST              84 ('envType')
+           1860 LOAD_CONST              85 ('telegram')
+           1862 LOAD_CONST              86 ('blockId')
+           1864 LOAD_CONST              87 ('22774')
+           1866 LOAD_CONST              88 ('platform')
+           1868 LOAD_CONST              89 ('Linux aarch64')
+           1870 LOAD_CONST              90 ('language')
+           1872 LOAD_FAST               30 (U)
+           1874 LOAD_ATTR               63 (NULL|self + get)
+           1894 LOAD_CONST              91 ('language_code')
+           1896 LOAD_CONST              67 ('id')
+           1898 CALL                     2
+           1906 LOAD_CONST              92 ('top_domain')
+           1908 LOAD_CONST              93 ('moonraid.online')
+           1910 LOAD_CONST              94 ('connectiontype')
+           1912 LOAD_CONST              95 ('1')
+           1914 LOAD_GLOBAL             90 (_G)
+           1924 LOAD_FAST               29 (J)
+           1926 LOAD_ATTR               63 (NULL|self + get)
+           1946 LOAD_GLOBAL             90 (_G)
+           1956 LOAD_CONST              68 ('')
+           1958 CALL                     2
+           1966 LOAD_CONST              96 ('data_check_string')
+           1968 LOAD_GLOBAL             93 (NULL + generate_adsgram_data)
+           1978 LOAD_FAST               29 (J)
+           1980 CALL                     1
+           1988 LOAD_CONST              97 ('sdk_version')
+           1990 LOAD_CONST              98 ('1.42.1')
+           1992 LOAD_CONST              99 ('tg_id')
+           1994 LOAD_FAST               31 (E)
+           1996 LOAD_CONST             100 ('tg_platform')
+           1998 LOAD_FAST                2 (s)
+           2000 LOAD_CONST             101 ('tma_version')
+           2002 LOAD_CONST             102 ('9.1')
+           2004 LOAD_CONST             103 ('request_id')
+           2006 LOAD_FAST               37 (a)
+           2008 LOAD_CONST             104 ('raw')
+           2010 LOAD_FAST               38 (A2)
+           2012 BUILD_MAP               14
+           2014 STORE_FAST              39 (A3)
+           2016 LOAD_CONST             105 ('https://api.adsgram.ai/adv?')
+           2018 LOAD_GLOBAL             95 (NULL + urlencode)
+           2028 LOAD_FAST               39 (A3)
+           2030 CALL                     1
+           2038 FORMAT_VALUE             0
+           2040 BUILD_STRING             2
+           2042 STORE_FAST              40 (A4)
+           2044 LOAD_GLOBAL             21 (NULL + print)
+           2054 LOAD_GLOBAL             28 (G)
+           2064 FORMAT_VALUE             0
+           2066 LOAD_CONST             106 ('[+] Authentication successful! Generate Ads URL is ready.')
+           2068 LOAD_GLOBAL             24 (W)
+           2078 FORMAT_VALUE             0
+           2080 LOAD_CONST              49 ('\n')
+           2082 BUILD_STRING             4
+           2084 CALL                     1
+           2092 POP_TOP
+           2094 LOAD_GLOBAL             79 (NULL + random)
+           2104 LOAD_ATTR               96 (randint)
+           2124 LOAD_CONST              82 (30)
+           2126 LOAD_CONST             107 (40)
+           2128 CALL                     2
+           2136 STORE_FAST              41 (F)
+           2138 LOAD_GLOBAL             21 (NULL + print)
+           2148 LOAD_GLOBAL             98 (B)
+           2158 FORMAT_VALUE             0
+           2160 LOAD_CONST             108 ('[*] Starting execution of ')
+           2162 LOAD_FAST               41 (F)
+           2164 FORMAT_VALUE             0
+           2166 LOAD_CONST             109 ('x Ads missions...')
+           2168 LOAD_GLOBAL             24 (W)
+           2178 FORMAT_VALUE             0
+           2180 BUILD_STRING             5
+           2182 CALL                     1
+           2190 POP_TOP
+
+ 77        2192 LOAD_GLOBAL            101 (NULL + range)
+           2202 LOAD_CONST              62 (1)
+           2204 LOAD_FAST               41 (F)
+           2206 LOAD_CONST              62 (1)
+           2208 BINARY_OP                0 (+)
+           2212 CALL                     2
+           2220 GET_ITER
+        >> 2222 EXTENDED_ARG             3
+           2224 FOR_ITER               940 (to 4108)
+           2228 STORE_FAST              42 (b)
+
+ 78        2230 NOP
+
+ 79        2232 LOAD_GLOBAL             11 (NULL + os)
+           2242 LOAD_ATTR               12 (system)
+           2262 LOAD_GLOBAL             10 (os)
+           2272 LOAD_ATTR               14 (name)
+           2292 LOAD_FAST                3 (r)
+           2294 COMPARE_OP              40 (==)
+           2298 POP_JUMP_IF_FALSE        6 (to 2312)
+           2300 LOAD_GLOBAL             16 (_D)
+           2310 JUMP_FORWARD             5 (to 2322)
+        >> 2312 LOAD_GLOBAL             18 (_C)
+        >> 2322 CALL                     1
+           2330 POP_TOP
+           2332 LOAD_GLOBAL             21 (NULL + print)
+           2342 LOAD_CONST              49 ('\n')
+           2344 LOAD_GLOBAL             22 (M)
+           2354 FORMAT_VALUE             0
+           2356 LOAD_CONST              50 ('╔═════════════════════════════════════════════════════╗')
+           2358 LOAD_GLOBAL             24 (W)
+           2368 FORMAT_VALUE             0
+           2370 BUILD_STRING             4
+           2372 CALL                     1
+           2380 POP_TOP
+           2382 LOAD_GLOBAL             21 (NULL + print)
+           2392 LOAD_GLOBAL             22 (M)
+           2402 FORMAT_VALUE             0
+           2404 LOAD_CONST              51 (' ')
+           2406 LOAD_GLOBAL             26 (C)
+           2416 FORMAT_VALUE             0
+           2418 LOAD_CONST              52 (' 🚀 MOONRAID AUTO BOT ')
+           2420 LOAD_GLOBAL             28 (G)
+           2430 FORMAT_VALUE             0
+           2432 LOAD_CONST              53 ('STARTING... ')
+           2434 LOAD_GLOBAL             22 (M)
+           2444 FORMAT_VALUE             0
+           2446 LOAD_CONST              51 (' ')
+           2448 LOAD_GLOBAL             26 (C)
+           2458 FORMAT_VALUE             0
+           2460 LOAD_CONST              54 (' SyndicateBot Net  ')
+           2462 LOAD_GLOBAL             24 (W)
+           2472 FORMAT_VALUE             0
+           2474 BUILD_STRING            11
+           2476 CALL                     1
+           2484 POP_TOP
+           2486 LOAD_GLOBAL             21 (NULL + print)
+           2496 LOAD_GLOBAL             22 (M)
+           2506 FORMAT_VALUE             0
+           2508 LOAD_CONST              55 ('╚═════════════════════════════════════════════════════╝')
+           2510 LOAD_GLOBAL             24 (W)
+           2520 FORMAT_VALUE             0
+           2522 LOAD_CONST              49 ('\n')
+           2524 BUILD_STRING             4
+           2526 CALL                     1
+           2534 POP_TOP
+           2536 LOAD_GLOBAL             21 (NULL + print)
+           2546 LOAD_GLOBAL             26 (C)
+           2556 FORMAT_VALUE             0
+           2558 LOAD_CONST             110 ('--- Round ')
+           2560 LOAD_FAST               42 (b)
+           2562 FORMAT_VALUE             0
+           2564 LOAD_CONST             111 ('/')
+           2566 LOAD_FAST               41 (F)
+           2568 FORMAT_VALUE             0
+           2570 LOAD_CONST             112 (' ---')
+           2572 LOAD_GLOBAL             24 (W)
+           2582 FORMAT_VALUE             0
+           2584 BUILD_STRING             7
+           2586 CALL                     1
+           2594 POP_TOP
+           2596 LOAD_GLOBAL            103 (NULL + animate_loading)
+           2606 LOAD_GLOBAL             30 (Y)
+           2616 FORMAT_VALUE             0
+           2618 LOAD_CONST             113 ('Looking for ads missions...')
+           2620 LOAD_GLOBAL             24 (W)
+           2630 FORMAT_VALUE             0
+           2632 BUILD_STRING             3
+           2634 LOAD_CONST              59 (2)
+           2636 CALL                     2
+           2644 GET_AWAITABLE            0
+           2646 LOAD_CONST               0 (None)
+        >> 2648 SEND                     3 (to 2658)
+           2652 YIELD_VALUE              4
+           2654 RESUME                   3
+           2656 JUMP_BACKWARD_NO_INTERRUPT     5 (to 2648)
+        >> 2658 END_SEND
+           2660 POP_TOP
+           2662 LOAD_GLOBAL             69 (NULL + requests)
+           2672 LOAD_ATTR               62 (get)
+           2692 LOAD_FAST               40 (A4)
+           2694 LOAD_FAST               20 (H)
+           2696 KW_NAMES               114 (('headers',))
+           2698 CALL                     2
+           2706 STORE_FAST              43 (A5)
+           2708 LOAD_FAST               43 (A5)
+           2710 LOAD_ATTR               59 (NULL|self + json)
+           2730 CALL                     0
+           2738 STORE_FAST              44 (K)
+           2740 LOAD_CONST               0 (None)
+           2742 STORE_FAST              45 (L)
+
+ 80        2744 LOAD_FAST               16 (S)
+           2746 LOAD_FAST               44 (K)
+           2748 CONTAINS_OP              0
+           2750 POP_JUMP_IF_FALSE      103 (to 2958)
+           2752 LOAD_GLOBAL            105 (NULL + len)
+           2762 LOAD_FAST               44 (K)
+           2764 LOAD_FAST               16 (S)
+           2766 BINARY_SUBSCR
+           2770 CALL                     1
+           2778 LOAD_CONST              64 (0)
+           2780 COMPARE_OP              68 (>)
+           2784 POP_JUMP_IF_FALSE       86 (to 2958)
+
+ 81        2786 LOAD_FAST               44 (K)
+           2788 LOAD_FAST               16 (S)
+           2790 BINARY_SUBSCR
+           2794 LOAD_CONST              64 (0)
+           2796 BINARY_SUBSCR
+           2800 LOAD_ATTR               63 (NULL|self + get)
+           2820 LOAD_CONST             115 ('banner')
+           2822 BUILD_MAP                0
+           2824 CALL                     2
+           2832 LOAD_ATTR               63 (NULL|self + get)
+           2852 LOAD_CONST             116 ('trackings')
+           2854 BUILD_LIST               0
+           2856 CALL                     2
+           2864 STORE_FAST              46 (A6)
+
+ 82        2866 LOAD_FAST               46 (A6)
+           2868 GET_ITER
+        >> 2870 FOR_ITER                41 (to 2956)
+           2874 STORE_FAST              47 (c)
+
+ 83        2876 LOAD_FAST               47 (c)
+           2878 LOAD_ATTR               63 (NULL|self + get)
+           2898 LOAD_CONST             117 ('name')
+           2900 CALL                     1
+           2908 LOAD_CONST             118 ('reward')
+           2910 COMPARE_OP              40 (==)
+           2914 POP_JUMP_IF_TRUE         1 (to 2918)
+           2916 JUMP_BACKWARD           24 (to 2870)
+        >> 2918 LOAD_FAST               47 (c)
+           2920 LOAD_ATTR               63 (NULL|self + get)
+           2940 LOAD_CONST             119 ('value')
+           2942 CALL                     1
+           2950 STORE_FAST              45 (L)
+           2952 POP_TOP
+           2954 JUMP_FORWARD             1 (to 2958)
+
+ 82     >> 2956 END_FOR
+
+ 84     >> 2958 LOAD_FAST               45 (L)
+           2960 POP_JUMP_IF_FALSE       57 (to 3076)
+           2962 LOAD_GLOBAL            103 (NULL + animate_loading)
+           2972 LOAD_GLOBAL             98 (B)
+           2982 FORMAT_VALUE             0
+           2984 LOAD_CONST             120 ('Executing reward URL...')
+           2986 LOAD_GLOBAL             24 (W)
+           2996 FORMAT_VALUE             0
+           2998 BUILD_STRING             3
+           3000 LOAD_CONST             121 (1.5)
+           3002 CALL                     2
+           3010 GET_AWAITABLE            0
+           3012 LOAD_CONST               0 (None)
+        >> 3014 SEND                     3 (to 3024)
+           3018 YIELD_VALUE              4
+           3020 RESUME                   3
+           3022 JUMP_BACKWARD_NO_INTERRUPT     5 (to 3014)
+        >> 3024 END_SEND
+           3026 POP_TOP
+           3028 LOAD_GLOBAL             69 (NULL + requests)
+           3038 LOAD_ATTR               62 (get)
+           3058 LOAD_FAST               45 (L)
+           3060 LOAD_FAST               20 (H)
+           3062 KW_NAMES               114 (('headers',))
+           3064 CALL                     2
+           3072 POP_TOP
+           3074 JUMP_FORWARD            24 (to 3124)
+
+ 85     >> 3076 LOAD_GLOBAL             21 (NULL + print)
+           3086 LOAD_GLOBAL             30 (Y)
+           3096 FORMAT_VALUE             0
+           3098 LOAD_CONST             122 ('[!] There is no reward URL in the response ad.')
+           3100 LOAD_GLOBAL             24 (W)
+           3110 FORMAT_VALUE             0
+           3112 BUILD_STRING             3
+           3114 CALL                     1
+           3122 POP_TOP
+
+ 86     >> 3124 LOAD_FAST                1 (t)
+           3126 LOAD_FAST               31 (E)
+           3128 BUILD_MAP                1
+           3130 STORE_FAST              48 (A7)
+           3132 LOAD_GLOBAL             69 (NULL + requests)
+           3142 LOAD_ATTR               62 (get)
+           3162 LOAD_FAST               21 (v)
+           3164 LOAD_FAST               48 (A7)
+           3166 LOAD_FAST               22 (D)
+           3168 KW_NAMES               123 (('params', 'headers'))
+           3170 CALL                     3
+           3178 STORE_FAST              49 (N)
+
+ 87        3180 LOAD_FAST               49 (N)
+           3182 LOAD_ATTR              106 (status_code)
+           3202 LOAD_CONST             124 (200)
+           3204 COMPARE_OP              40 (==)
+           3208 POP_JUMP_IF_FALSE      175 (to 3560)
+           3210 LOAD_FAST               49 (N)
+           3212 LOAD_ATTR               59 (NULL|self + json)
+           3232 CALL                     0
+           3240 STORE_FAST              50 (O)
+           3242 LOAD_FAST               50 (O)
+           3244 LOAD_ATTR               63 (NULL|self + get)
+           3264 LOAD_CONST             125 ('views')
+           3266 LOAD_CONST              64 (0)
+           3268 CALL                     2
+           3276 STORE_FAST              51 (A8)
+           3278 LOAD_FAST               50 (O)
+           3280 LOAD_ATTR               63 (NULL|self + get)
+           3300 LOAD_CONST             126 ('totalEarned')
+           3302 LOAD_CONST              64 (0)
+           3304 CALL                     2
+           3312 STORE_FAST              52 (A9)
+           3314 LOAD_FAST               50 (O)
+           3316 LOAD_ATTR               63 (NULL|self + get)
+           3336 LOAD_CONST             127 ('currentCooldown')
+           3338 LOAD_CONST              64 (0)
+           3340 CALL                     2
+           3348 STORE_FAST              53 (d)
+           3350 LOAD_GLOBAL             21 (NULL + print)
+           3360 LOAD_GLOBAL             28 (G)
+           3370 FORMAT_VALUE             0
+           3372 LOAD_CONST             128 ('✅ SUCCESS! ')
+           3374 LOAD_GLOBAL             24 (W)
+           3384 FORMAT_VALUE             0
+           3386 LOAD_CONST             129 ('| ')
+           3388 LOAD_GLOBAL             26 (C)
+           3398 FORMAT_VALUE             0
+           3400 LOAD_CONST             130 ('👁️ Views: ')
+           3402 LOAD_GLOBAL             24 (W)
+           3412 FORMAT_VALUE             0
+           3414 LOAD_FAST               51 (A8)
+           3416 FORMAT_VALUE             0
+           3418 LOAD_CONST              51 (' ')
+           3420 LOAD_GLOBAL             24 (W)
+           3430 FORMAT_VALUE             0
+           3432 LOAD_CONST             129 ('| ')
+           3434 LOAD_GLOBAL             30 (Y)
+           3444 FORMAT_VALUE             0
+           3446 LOAD_CONST             131 ('💰 Earned: ')
+           3448 LOAD_GLOBAL             24 (W)
+           3458 FORMAT_VALUE             0
+           3460 LOAD_FAST               52 (A9)
+           3462 FORMAT_VALUE             0
+           3464 BUILD_STRING            15
+           3466 CALL                     1
+           3474 POP_TOP
+           3476 LOAD_FAST               53 (d)
+           3478 LOAD_CONST              64 (0)
+           3480 COMPARE_OP              68 (>)
+           3484 POP_JUMP_IF_FALSE       14 (to 3514)
+           3486 LOAD_GLOBAL             67 (NULL + int)
+           3496 LOAD_FAST               53 (d)
+           3498 CALL                     1
+           3506 LOAD_CONST              62 (1)
+           3508 BINARY_OP                0 (+)
+           3512 JUMP_FORWARD            21 (to 3556)
+        >> 3514 LOAD_GLOBAL             79 (NULL + random)
+           3524 LOAD_ATTR               96 (randint)
+           3544 LOAD_CONST             132 (31)
+           3546 LOAD_CONST             133 (50)
+           3548 CALL                     2
+        >> 3556 STORE_FAST              54 (e)
+           3558 JUMP_FORWARD            59 (to 3678)
+
+ 88     >> 3560 LOAD_GLOBAL             21 (NULL + print)
+           3570 LOAD_GLOBAL             72 (R)
+           3580 FORMAT_VALUE             0
+           3582 LOAD_CONST             134 ('❌ Failed to fetch stats (Status Code: ')
+           3584 LOAD_FAST               49 (N)
+           3586 LOAD_ATTR              106 (status_code)
+           3606 FORMAT_VALUE             0
+           3608 LOAD_CONST             135 (')')
+           3610 LOAD_GLOBAL             24 (W)
+           3620 FORMAT_VALUE             0
+           3622 BUILD_STRING             5
+           3624 CALL                     1
+           3632 POP_TOP
+           3634 LOAD_GLOBAL             79 (NULL + random)
+           3644 LOAD_ATTR               96 (randint)
+           3664 LOAD_CONST             132 (31)
+           3666 LOAD_CONST             133 (50)
+           3668 CALL                     2
+           3676 STORE_FAST              54 (e)
+
+ 89     >> 3678 LOAD_GLOBAL            101 (NULL + range)
+           3688 LOAD_FAST               54 (e)
+           3690 LOAD_CONST              64 (0)
+           3692 LOAD_CONST             136 (-1)
+           3694 CALL                     3
+           3702 GET_ITER
+        >> 3704 FOR_ITER               122 (to 3952)
+           3708 STORE_FAST              55 (AA)
+           3710 LOAD_GLOBAL            108 (sys)
+           3720 LOAD_ATTR              110 (stdout)
+           3740 LOAD_ATTR              113 (NULL|self + write)
+           3760 LOAD_CONST             137 ('\r')
+           3762 LOAD_GLOBAL             22 (M)
+           3772 FORMAT_VALUE             0
+           3774 LOAD_CONST             138 ('⏳ Cooldown: ')
+           3776 LOAD_GLOBAL             26 (C)
+           3786 FORMAT_VALUE             0
+           3788 LOAD_FAST               55 (AA)
+           3790 FORMAT_VALUE             0
+           3792 LOAD_CONST             139 ('s ')
+           3794 LOAD_GLOBAL             30 (Y)
+           3804 FORMAT_VALUE             0
+           3806 LOAD_CONST             140 ('anti bot detection... 💨')
+           3808 LOAD_GLOBAL             24 (W)
+           3818 FORMAT_VALUE             0
+           3820 BUILD_STRING             9
+           3822 CALL                     1
+           3830 POP_TOP
+           3832 LOAD_GLOBAL            108 (sys)
+           3842 LOAD_ATTR              110 (stdout)
+           3862 LOAD_ATTR              115 (NULL|self + flush)
+           3882 CALL                     0
+           3890 POP_TOP
+           3892 LOAD_GLOBAL             37 (NULL + asyncio)
+           3902 LOAD_ATTR               38 (sleep)
+           3922 LOAD_CONST              62 (1)
+           3924 CALL                     1
+           3932 GET_AWAITABLE            0
+           3934 LOAD_CONST               0 (None)
+        >> 3936 SEND                     3 (to 3946)
+           3940 YIELD_VALUE              4
+           3942 RESUME                   3
+           3944 JUMP_BACKWARD_NO_INTERRUPT     5 (to 3936)
+        >> 3946 END_SEND
+           3948 POP_TOP
+           3950 JUMP_BACKWARD          124 (to 3704)
+        >> 3952 END_FOR
+
+ 90        3954 LOAD_GLOBAL            108 (sys)
+           3964 LOAD_ATTR              110 (stdout)
+           3984 LOAD_ATTR              113 (NULL|self + write)
+           4004 LOAD_GLOBAL            116 (_B)
+           4014 LOAD_CONST             141 ('                                                            ')
+           4016 BINARY_OP                0 (+)
+           4020 LOAD_GLOBAL            116 (_B)
+           4030 BINARY_OP                0 (+)
+           4034 CALL                     1
+           4042 POP_TOP
+           4044 LOAD_GLOBAL            108 (sys)
+           4054 LOAD_ATTR              110 (stdout)
+           4074 LOAD_ATTR              115 (NULL|self + flush)
+           4094 CALL                     0
+           4102 POP_TOP
+           4104 EXTENDED_ARG             3
+           4106 JUMP_BACKWARD          943 (to 2222)
+
+ 77     >> 4108 END_FOR
+
+ 92        4110 LOAD_GLOBAL             21 (NULL + print)
+           4120 LOAD_CONST              49 ('\n')
+           4122 LOAD_GLOBAL             28 (G)
+           4132 FORMAT_VALUE             0
+           4134 LOAD_CONST             145 ('[*] Completed ')
+           4136 LOAD_FAST               41 (F)
+           4138 FORMAT_VALUE             0
+           4140 LOAD_CONST             146 ('x executions. Repeating the authentication process from the beginning...')
+           4142 LOAD_GLOBAL             24 (W)
+           4152 FORMAT_VALUE             0
+           4154 BUILD_STRING             6
+           4156 CALL                     1
+           4164 POP_TOP
+           4166 LOAD_GLOBAL             37 (NULL + asyncio)
+           4176 LOAD_ATTR               38 (sleep)
+           4196 LOAD_CONST             147 (3)
+           4198 CALL                     1
+           4206 GET_AWAITABLE            0
+           4208 LOAD_CONST               0 (None)
+        >> 4210 SEND                     3 (to 4220)
+           4214 YIELD_VALUE              3
+           4216 RESUME                   3
+           4218 JUMP_BACKWARD_NO_INTERRUPT     5 (to 4210)
+        >> 4220 END_SEND
+           4222 POP_TOP
+
+ 70     >> 4224 EXTENDED_ARG             7
+           4226 JUMP_BACKWARD         1956 (to 316)
+
+ 69     >> 4228 CLEANUP_THROW
+           4230 EXTENDED_ARG             7
+           4232 JUMP_BACKWARD         2029 (to 176)
+
+ 73     >> 4234 CLEANUP_THROW
+           4236 EXTENDED_ARG             6
+           4238 JUMP_BACKWARD         1760 (to 720)
+        >> 4240 CLEANUP_THROW
+           4242 EXTENDED_ARG             6
+           4244 JUMP_BACKWARD         1737 (to 772)
+        >> 4246 CLEANUP_THROW
+           4248 EXTENDED_ARG             6
+           4250 JUMP_BACKWARD         1711 (to 830)
+        >> 4252 CLEANUP_THROW
+           4254 EXTENDED_ARG             6
+           4256 JUMP_BACKWARD         1660 (to 938)
+
+ 75     >> 4258 CLEANUP_THROW
+           4260 EXTENDED_ARG             5
+           4262 JUMP_BACKWARD         1294 (to 1676)
+
+ 79     >> 4264 CLEANUP_THROW
+           4266 EXTENDED_ARG             3
+           4268 JUMP_BACKWARD          806 (to 2658)
+
+ 84     >> 4270 CLEANUP_THROW
+           4272 EXTENDED_ARG             2
+           4274 JUMP_BACKWARD          626 (to 3024)
+
+ 89     >> 4276 CLEANUP_THROW
+           4278 JUMP_BACKWARD          167 (to 3946)
+        >> 4280 PUSH_EXC_INFO
+
+ 91        4282 LOAD_GLOBAL            118 (Exception)
+           4292 CHECK_EXC_MATCH
+           4294 POP_JUMP_IF_FALSE      116 (to 4528)
+           4296 STORE_FAST              56 (AB)
+           4298 LOAD_GLOBAL            108 (sys)
+           4308 LOAD_ATTR              110 (stdout)
+           4328 LOAD_ATTR              113 (NULL|self + write)
+           4348 LOAD_GLOBAL            116 (_B)
+           4358 LOAD_CONST             141 ('                                                            ')
+           4360 BINARY_OP                0 (+)
+           4364 LOAD_GLOBAL            116 (_B)
+           4374 BINARY_OP                0 (+)
+           4378 CALL                     1
+           4386 POP_TOP
+           4388 LOAD_GLOBAL             21 (NULL + print)
+           4398 LOAD_GLOBAL             72 (R)
+           4408 FORMAT_VALUE             0
+           4410 LOAD_CONST             142 ('❌ Error on round ')
+           4412 LOAD_FAST               42 (b)
+           4414 FORMAT_VALUE             0
+           4416 LOAD_CONST             143 (': ')
+           4418 LOAD_FAST               56 (AB)
+           4420 FORMAT_VALUE             0
+           4422 LOAD_CONST             144 ('. Retrying the next round...')
+           4424 LOAD_GLOBAL             24 (W)
+           4434 FORMAT_VALUE             0
+           4436 BUILD_STRING             7
+           4438 CALL                     1
+           4446 POP_TOP
+           4448 LOAD_GLOBAL             37 (NULL + asyncio)
+           4458 LOAD_ATTR               38 (sleep)
+           4478 LOAD_CONST              80 (5)
+           4480 CALL                     1
+           4488 GET_AWAITABLE            0
+           4490 LOAD_CONST               0 (None)
+        >> 4492 SEND                     4 (to 4504)
+           4496 YIELD_VALUE              5
+           4498 RESUME                   3
+           4500 JUMP_BACKWARD_NO_INTERRUPT     5 (to 4492)
+        >> 4502 CLEANUP_THROW
+        >> 4504 END_SEND
+           4506 POP_TOP
+           4508 POP_EXCEPT
+           4510 LOAD_CONST               0 (None)
+           4512 STORE_FAST              56 (AB)
+           4514 DELETE_FAST             56 (AB)
+           4516 EXTENDED_ARG             4
+           4518 JUMP_BACKWARD         1149 (to 2222)
+        >> 4520 LOAD_CONST               0 (None)
+           4522 STORE_FAST              56 (AB)
+           4524 DELETE_FAST             56 (AB)
+           4526 RERAISE                  1
+        >> 4528 RERAISE                  0
+        >> 4530 COPY                     3
+           4532 POP_EXCEPT
+           4534 RERAISE                  1
+
+ 92     >> 4536 CLEANUP_THROW
+           4538 JUMP_BACKWARD          160 (to 4220)
+        >> 4540 PUSH_EXC_INFO
+
+ 93        4542 LOAD_GLOBAL            118 (Exception)
+           4552 CHECK_EXC_MATCH
+           4554 POP_JUMP_IF_FALSE       91 (to 4738)
+           4556 STORE_FAST              57 (AC)
+           4558 LOAD_GLOBAL             21 (NULL + print)
+           4568 LOAD_CONST              49 ('\n')
+           4570 LOAD_GLOBAL             72 (R)
+           4580 FORMAT_VALUE             0
+           4582 LOAD_CONST             148 ('❌ Primary authentication/connection error: ')
+           4584 LOAD_FAST               57 (AC)
+           4586 FORMAT_VALUE             0
+           4588 LOAD_GLOBAL             24 (W)
+           4598 FORMAT_VALUE             0
+           4600 BUILD_STRING             5
+           4602 CALL                     1
+           4610 POP_TOP
+           4612 LOAD_GLOBAL             21 (NULL + print)
+           4622 LOAD_GLOBAL             30 (Y)
+           4632 FORMAT_VALUE             0
+           4634 LOAD_CONST             149 ('[*] Retrying in 10 seconds...')
+           4636 LOAD_GLOBAL             24 (W)
+           4646 FORMAT_VALUE             0
+           4648 BUILD_STRING             3
+           4650 CALL                     1
+           4658 POP_TOP
+           4660 LOAD_GLOBAL             37 (NULL + asyncio)
+           4670 LOAD_ATTR               38 (sleep)
+           4690 LOAD_CONST             150 (10)
+           4692 CALL                     1
+           4700 GET_AWAITABLE            0
+           4702 LOAD_CONST               0 (None)
+        >> 4704 SEND                     4 (to 4716)
+           4708 YIELD_VALUE              4
+           4710 RESUME                   3
+           4712 JUMP_BACKWARD_NO_INTERRUPT     5 (to 4704)
+        >> 4714 CLEANUP_THROW
+        >> 4716 END_SEND
+           4718 POP_TOP
+           4720 POP_EXCEPT
+           4722 LOAD_CONST               0 (None)
+           4724 STORE_FAST              57 (AC)
+           4726 DELETE_FAST             57 (AC)
+           4728 JUMP_BACKWARD          253 (to 4224)
+        >> 4730 LOAD_CONST               0 (None)
+           4732 STORE_FAST              57 (AC)
+           4734 DELETE_FAST             57 (AC)
+           4736 RERAISE                  1
+        >> 4738 RERAISE                  0
+        >> 4740 COPY                     3
+           4742 POP_EXCEPT
+           4744 RERAISE                  1
+        >> 4746 CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+           4748 RERAISE                  1
+ExceptionTable:
+  4 to 168 -> 4746 [0] lasti
+  170 to 170 -> 4228 [2]
+  172 to 618 -> 4746 [0] lasti
+  622 to 712 -> 4540 [0]
+  714 to 714 -> 4234 [2]
+  716 to 764 -> 4540 [0]
+  766 to 766 -> 4240 [2]
+  768 to 822 -> 4540 [0]
+  824 to 824 -> 4246 [2]
+  826 to 930 -> 4540 [0]
+  932 to 932 -> 4252 [2]
+  934 to 1668 -> 4540 [0]
+  1670 to 1670 -> 4258 [2]
+  1672 to 1678 -> 4540 [0]
+  1680 to 1682 -> 4746 [0] lasti
+  1684 to 2228 -> 4540 [0]
+  2232 to 2650 -> 4280 [1]
+  2652 to 2652 -> 4264 [3]
+  2654 to 2914 -> 4280 [1]
+  2918 to 3016 -> 4280 [1]
+  3018 to 3018 -> 4270 [3]
+  3020 to 3938 -> 4280 [1]
+  3940 to 3940 -> 4276 [4]
+  3942 to 4102 -> 4280 [1]
+  4104 to 4212 -> 4540 [0]
+  4214 to 4214 -> 4536 [2]
+  4216 to 4222 -> 4540 [0]
+  4224 to 4228 -> 4746 [0] lasti
+  4234 to 4234 -> 4540 [0]
+  4240 to 4240 -> 4540 [0]
+  4246 to 4246 -> 4540 [0]
+  4252 to 4252 -> 4540 [0]
+  4258 to 4258 -> 4540 [0]
+  4264 to 4264 -> 4280 [1]
+  4270 to 4270 -> 4280 [1]
+  4276 to 4276 -> 4280 [1]
+  4280 to 4296 -> 4530 [2] lasti
+  4298 to 4494 -> 4520 [2] lasti
+  4496 to 4496 -> 4502 [4]
+  4498 to 4506 -> 4520 [2] lasti
+  4508 to 4518 -> 4540 [0]
+  4520 to 4528 -> 4530 [2] lasti
+  4530 to 4536 -> 4540 [0]
+  4540 to 4556 -> 4740 [1] lasti
+  4558 to 4706 -> 4730 [1] lasti
+  4708 to 4708 -> 4714 [3]
+  4710 to 4718 -> 4730 [1] lasti
+  4720 to 4728 -> 4746 [0] lasti
+  4730 to 4738 -> 4740 [1] lasti
+  4740 to 4744 -> 4746 [0] lasti
